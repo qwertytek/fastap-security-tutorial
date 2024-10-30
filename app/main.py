@@ -1,5 +1,6 @@
 from fastapi import FastAPI
 from app.dependencies import dep_current_user, dep_token
+from app.database import fake_users_db
 
 app = FastAPI()
 
