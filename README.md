@@ -39,3 +39,22 @@ Use this define your models.
 ### database
 
 For this tutorial I skipped this step, as only the data is needed. It will be in a separate file with mock data.
+
+### Hashing, enconding and decoding
+
+- Hashing
+Hashing is a process that transforms data of any size into a fixed-size value, usually a string of letters and numbers.
+  - One-way process, meaning it’s extremely difficult to reverse. You cannot "decode" a hash to get the original data back.
+  - Primarily used for security purposes (e.g., storing passwords securely) and data integrity (e.g., ensuring files haven’t been altered).
+  - specifically designed to secure sensitive data through one-way encryption and to detect tampering.
+  - The same input always produces the same hash, which is useful for verification.
+
+- Encoding
+Transforming data into a different format to ensure it’s readable or compatible with various systems.
+  - designed to be reversible
+  - make data safe for transmission or storage, handling special characters, or ensuring compatibility.
+  - It is not meant for security and offers no protection against unauthorized access.
+
+- Decoding
+The reverse of encoding. If something was encoded, you can decode it to get back the original data.
+  - Used in data transmission and storage to handle non-standard characters or compress data.
