@@ -5,7 +5,7 @@
 ## Diferences from the tutorial
 
 The tutorial focused on explaining each piece of code, while visualizing everything on the same file.
-Although I like this approach, separating each piece of logic into it's on file massively improved my understanding of the Security implementation. As there alot of concepts that are needed to be understood to be able to add your own authentication flows.
+Although I like this approach, separating each piece of logic into it's on file massively improved my understanding of the Security implementation. As there alot of concepts that are needed to be understood to be able to add your own authentication flows. On a single file it's easy to loose track of the interactions.
 
 ## Key Concepts
 
