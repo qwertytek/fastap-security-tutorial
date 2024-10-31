@@ -2,6 +2,10 @@
 
 [tutorial](https://fastapi.tiangolo.com/tutorial/security/first-steps/#how-it-looks)
 
+Since the login form will be it's own front end (in this case using Astro + React [frontend-github](https://github.com/qwertytek/security-tutorial-fe)), CORS needs to be implemented.
+
+[cors-tutorial](https://fastapi.tiangolo.com/tutorial/cors/)
+
 ## Diferences from the tutorial
 
 The tutorial focused on explaining each piece of code, while visualizing everything on the same file.
