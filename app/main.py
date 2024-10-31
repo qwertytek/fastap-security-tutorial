@@ -1,9 +1,22 @@
 from fastapi import FastAPI, HTTPException
+from fastapi.middleware.cors import CORSMiddleware
 from app.dependencies import dep_token, dep_form_data, dep_current_active_user
 from app.database import fake_users_db
 from app.models import UserInDB
 
 app = FastAPI()
+
+origins = [
+    'http://localhost:4321/'
+]
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=origins,
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 
 def fake_hash_password(password: str):
     return "fakehashed" + password
